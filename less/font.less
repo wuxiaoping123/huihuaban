@@ -1,0 +1,134 @@
+//@font-face {
+//  font-family: 'demo';
+//  src: url('../font/iconfont.eot'); /* IE9*/
+//  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//  url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+//  url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+//  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+//}
+//@name1:pen;
+//@name2:wujiao;
+//@name3:rect;
+//@name4:line;
+//@name5:circle;
+//@name6:xinjian;
+//@name7:return;
+//@name8:baocun;
+//@name9:clear;
+//
+//@cal1:e617;
+//@cal2:e612;
+//@cal3:e606;
+//@cal4:e614;
+//@cal5:e607;
+//@cal6:e60a;
+//@cal7:e605;
+//@cal8:e605;
+//@cal9:e610;
+//.for(@i:1) when(@i<=9){
+//  @n:"name@{i}";
+//  @n1:@@n;
+//  @c:"cal@{i}";
+//  @c1:@@c;
+//  *[data-role=@{n1}]:before{
+//    content:"\@{c1}";
+//    font-family:demo;
+//  }
+//  //上面
+//  *[data-role=@{n1}][icon-pos=top]:before{
+//    display:block;
+//    content:"\@{c1}";
+//    font-family:demo;
+//    text-align:center;
+//  }
+//  //下面
+//  *[data-role=@{n1}]:before{
+//    content:"";
+//    font-family:demo;
+//  }
+//  *[data-role=@{n1}][icon-pos=bottom]:after{
+//    display:block;
+//    content:"\@{c1}";
+//    font-family:demo;
+//    text-align:center;
+//  }
+//  //右面
+//  *[data-role=@{n1}][icon-pos=right]:after{
+//    content:"\@{c1}";
+//    font-family:demo;
+//  }
+//  .for(@i+1);
+//}
+//.for();
+@font-face {font-family: 'demo';
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@name1:pen;
+@name2:five;
+@name3:rect;
+@name4:line;
+@name5:circle;
+@name6:xinjian;
+@name7:return;
+@name8:baocun;
+@name9:clear;
+@name10:line1;
+@name11:line2;
+@name12:line3;
+
+
+@cal1:e60f;
+@cal2:e621;
+@cal3:e605;
+@cal4:e618;
+@cal5:e622;
+@cal6:e601;
+@cal7:e61d;
+@cal8:e61c;
+@cal9:e610;
+@cal10:e600;
+@cal11:e61a;
+@cal12:e620;
+.for(@i:1) when (@i<=12){
+  @n:'name@{i}';
+  @n1:@@n;
+  @c:'cal@{i}';
+  @c1:@@c;
+  *[data-role=@{n1}]:before{
+    font-family: demo;
+    content: "\@{c1}";
+  }
+  *[data-role=@{n1}][icon-pos=top]:before{
+    display:block;
+    font-family: demo;
+    content: "\@{c1}";
+    text-align: center;
+  }
+
+  *[data-role=@{n1}][icon-pos=right]:before {
+    font-family: demo;
+    content: "";
+  }
+  *[data-role=@{n1}][icon-pos=right]:after{
+    font-family: demo;
+    content: "\@{c1}";
+  }
+
+
+  *[data-role=@{n1}][icon-pos=bottom]:before {
+    font-family: demo;
+    content: "";
+  }
+  *[data-role=@{n1}][icon-pos=bottom]:after{
+    font-family: demo;
+    content: "\@{c1}";
+    display: block;
+  }
+  .for(@i+1);
+}
+.for();

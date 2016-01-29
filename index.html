@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/shape.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <div class="parent hasson">
+            <div>画图</div>
+            <ul class="son">
+                <li data-style="line" data-role="line"></li>
+                <li data-style="rect" data-role="rect"></li>
+                <li data-style="circle" data-role="circle"></li>
+                <li data-style="five" data-role="five"></li>
+                <li data-style="pen" data-role="pen"></li>
+            </ul>
+        </div>
+        <div class="parent hasson">
+            <div>类型</div>
+            <ul class="son type">
+                <li data-style="fill" data-role="fill">填充</li>
+                <li data-style="stroke" data-role="stroke">画线</li>
+            </ul>
+        </div>
+        <div class="parent hasson">
+            <div>边框色</div>
+            <ul class="son">
+                <li title="线条的颜色" class="bordercolor"><input type="color"></li>
+            </ul>
+        </div>
+        <div class="parent hasson">
+            <div>填充色</div>
+            <ul class="son">
+                <li title="填充颜色" class="bgcolor"><input type="color"></li>
+            </ul>
+        </div>
+        <div class="parent hasson">
+            <div>线条样式</div>
+            <ul class="son linewidth">
+                <li data-style="1" data-role="line1"></li>
+                <li data-style="3" data-role="line2"></li>
+                <li data-style="6" data-role="line3"></li>
+            </ul>
+        </div>
+        <div class="parent hasson">
+            <div>橡皮</div>
+            <ul class="son xpsize">
+                <li data-style="8" data-role="clear"></li>
+                <li data-style="12" data-role="clear"></li>
+                <li data-style="24" data-role="clear"></li>
+            </ul>
+        </div>
+        <div class="parent hasson">
+            <div class="select">选择</div>
+        </div>
+    </div>
+    <ul class="center file">
+        <li class="center1" data-role="xinjian"></li>
+        <li class="center1" data-role="return"></li>
+        <li class="center1" data-role="baocun"></li>
+    </ul>
+    <div class="con">
+        <div class="copy"></div>
+        <canvas style="background:#fff"></canvas>
+        <div class="xp"></div>
+        <div class="selectarea"></div>
+    </div>
+
+</div>
+</body>
+</html>
